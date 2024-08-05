@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+html{
+    font-family: "Cairo", sans-serif;
+    letter-spacing: 0.7px;
+    scroll-behavior: smooth;
+}
+html {box-sizing: border-box;} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+:root{
+    --primary:#000;
+    --secondary:#1f2631;
+    --border:#ffffff1f;
+    --title:rgb(244, 244, 245);
+    --subTitle:rgb(161, 161, 170);
+    --border:#75686820;
+    --blue:#283449d6;
+    --box-shadow:2px 1px 30px #354154;
+    --color-hover:#bfdbf7;
+    --button:#283449d6;
+    --liner: linear-gradient(#283449aa,#5d9ac929,#283449c0)
+}
+.Light{
+    --primary:#e7ecef;
+    --secondary:#e7ecefc3;
+    --title:#354f52;
+    --subTitle: #2e413c;
+    --blue: #ced4da;
+    --box-shadow: 2px 1px 30px #bbc9e0;
+    --color-hover:#84a98c;
+    --button:#2f3e46;
+    --liner: linear-gradient(var(--blue), #5d9ac929, #283449c0)
+
+}
+body{
+    background-color: var(--primary);
+    color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary);
+    border: 2px solid var(--border);
+    padding: 0 4rem
+}
+
+@media(max-width:700px){
+    .container{
+        padding: 1rem;
+    }
+   
+}
+@media(max-width:500px){
+    .container{
+        width: 100%;
+    }
+}
+.line{
+    border-bottom: 1px solid var(--border);
+    margin: 3rem 0;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: 0.2s all;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.border{
+    border: 2px solid red;
+}
+header button{
+    font-size: 1.2rem;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+button:active{
+    scale: 0.95;
+}
+::-webkit-scrollbar {
+    width: 0.8rem;
+   }
+   
+  ::-webkit-scrollbar-track {
+    border: 7px solid var(--subTitle);
+    box-shadow: inset 0 0 2.5px 2px var(--subTitle);
+    border-radius: 10px;
+    background-color: #333;
+    }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #1d2f554b;
+    border-radius: 10px;
+  }
+   .scroll{
+    background-color: rgba(31, 128, 180, 0.675);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    position: fixed;
+    bottom: 1.1rem;
+    right: 2rem;
+    transition: 0.3s all;
+    border: 1px solid #ffffff52;
+    color: #fff;
+}
+.Light .scroll{
+    background-color: #354f52;
+}
+.scroll:hover{
+    scale: 1.2;
+}
+@media(max-width:600px){
+    .scroll{
+        bottom: .5rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: .8rem;
+        right: 10px;
+        opacity: 0.4;
+    }
+}

@@ -1,0 +1,196 @@
+header.flex{
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1rem;
+}
+header .samy{
+    background-color: var(--blue);
+    border-radius: 17px;
+    width: 7rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 0 0.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header .samy span{
+    font-size: 1.5rem;
+    color: var(--title);
+    font-weight: 600;
+    opacity: 0.9;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+header.flex nav{
+    background-color: var(--blue);
+    padding: 0.7rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: var(--box-shadow);
+}
+header ul.flex{
+    gap: 20px;
+}
+ 
+header ul li a{
+    color: var(--title);
+    opacity: 0.8;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s all;
+    text-transform: uppercase;
+
+}
+header ul li a:hover{
+    color: var(--color-hover);
+    opacity: 1;
+    font-size: 1.07rem;
+    transition: 0.3s all;
+}
+header .menu{
+    display: none;
+}
+header .fixed{
+    inset: 0;
+    background-color: #778da9a5;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+}
+header ul.model{
+    width: 75%;
+    margin: 2rem auto 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    animation: semo 0.5s 1 ;
+    text-transform: uppercase;
+}
+header ul.model li{
+    border-bottom: 1px solid #ffffff1f;
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+header ul.model li:nth-child(6){
+    border-bottom: none;
+}
+header ul.model li a{
+    font-size: 1rem;
+}
+header ul.model li:first-child{
+text-align: right;
+border-bottom: none;
+padding-bottom: 0;
+padding-top: 0.2rem;
+margin-bottom: -30px;
+}
+header .mode{
+    background-color: var(--blue);
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--subTitle);
+    box-shadow: var(--box-shadow);
+
+}
+ header .icon-menu{
+    background-color: var(--blue);
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--subTitle);
+    box-shadow: var(--box-shadow);
+}
+
+header .icon-wb_sunny{
+    color: rgba(237, 158, 11, 0.566);
+}
+header .mode:hover, header .icon-menu:hover{
+    border: 1px solid rgba(176, 112, 8, 0.841);
+    transition: 0.3s all;
+    color: #fff;
+  
+}
+header .icon-close{
+    color: var(--subTitle);
+    font-size: 1.3rem;
+    transition: 0.3s;
+
+}
+header .icon-close:hover{
+    color: rgb(206, 10, 10);
+    font-size: 1.6rem;
+    rotate: 180deg;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:800px){
+    nav{
+        display: none;
+    }
+    header .menu{
+        display: block;
+        margin-left: -20px;
+    }
+    header .mode{
+        width: 2rem;
+        height: 2rem;
+        justify-content: center;
+    text-align: center;
+    margin-right: -20px;
+
+    }
+}
+@media(max-width:990px){
+    nav{
+        margin: 0 1.5rem 0 6rem;
+    }
+    header .samy{
+        margin-left: -6rem;
+        padding: 0;
+    }
+}
+@media (min-width:1000px){
+    header .samy{
+        margin-left: -30px;
+    }
+}
+
+
+@media(min-width:300px){
+    header .samy{
+    padding: 0 0.3rem;
+    margin-left: 0;
+    }
+}
+
+@keyframes semo{
+    0%{
+        scale: 0;
+    }
+    60%{
+        scale: 1.2;
+    }
+    100%{
+        scale:1
+    }
+}

@@ -1,0 +1,84 @@
+section.flex{
+    justify-content: space-between;
+    gap: 3rem;
+}
+section.flex .left{
+flex: 1;
+border: 1px solid #55555584;
+border-radius: 7px;
+}
+section.flex .left:hover{
+    background-image: linear-gradient(#bfdbf742,#ffffff28);
+    cursor: pointer;
+    border: 1px solid #ffffff4b;
+}
+section.flex .left span{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: var(--title);
+    gap: 10px;
+    margin:10px 0;
+}
+section.flex .left span h6{
+    font-size: 2rem;
+}
+section.flex .left span i{
+    font-size: 2rem;
+    margin-top: 12px;
+}
+section .text{
+    padding-left: 15px;
+    color: var(--subTitle);
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+section .text h3{
+    margin: 13px 0 -35px 0;
+    color: var(--title);
+}
+section .text p{
+    padding-left: 15px;
+    margin-bottom: -24px;
+    font-size: 1.3rem;
+}
+section .text .pp{
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1300px){
+    section.flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    section .text p{
+        padding: 0;
+    }
+   
+}
+@media(width < 600px){
+    section span .ko{
+        margin-right:5
+    }
+    section.flex .left span .h{
+        margin-right: 7px;
+    }
+    section.flex .left span h6{
+    font-size: 1.8rem;
+
+    }
+    section.flex .left span i{
+    font-size: 1.8rem;
+
+    }
+}

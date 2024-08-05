@@ -1,0 +1,78 @@
+section.hero{
+    margin-top: 3rem;
+}
+
+/* left section*/
+section .left-sec{
+    flex: 1;
+}
+section .parent-avatar{
+align-items: end;
+gap: 0.4rem;
+}
+section .avatar{
+    width: 6rem;
+    border-radius: 50%;
+    border: 1px solid rgb(229, 93, 179);
+    padding: 2px;
+}
+section .icon-verified{
+    color: #4c9ef1;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+section h1.title{
+    font-size: 3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+section p.subTitle{
+    color: var(--subTitle);
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    width: 70%;
+}
+
+section .social {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+}
+section .social a{
+    color: var(--subTitle);
+
+}
+.Light section .social a:hover{
+    color: #000;
+}
+section .social a:hover{
+    font-size: 1.5rem;
+    transition: 0.3s all;
+}
+@media(max-width:767px){
+    section p.subTitle{
+        width: 100%;
+    }
+    section .social{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:900px){
+    section .contact{
+        display: none;
+    }
+}
+@media (max-width:1300px){
+    section h1.title, section p.subTitle, section .social{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* right section*/

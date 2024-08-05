@@ -1,0 +1,27 @@
+footer .flex{
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+footer .flex a{
+    color: var(--subTitle);
+    font-size: 1.2rem;
+    transition: 0.3s all;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer .flex a:hover{
+    color: #bfdbf7;
+    scale: 1.5;
+}
+.Light footer .flex a:hover{
+    color: #84a98c;
+}
+@media(max-width:600px){
+    footer .flex{
+        gap: 1rem;
+    }
+    footer .flex a{
+        font-size: 1rem;
+    }
+}
